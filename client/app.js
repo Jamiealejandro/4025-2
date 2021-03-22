@@ -12,11 +12,11 @@ const App = () => {
       jssStyles.parentNode.removeChild(jssStyles)
     }
   }, [])
- return (
+  return (
   <BrowserRouter>
-    <ThemeProvider theme={theme}>
-      <MainRouter/>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <MainRouter/>
+      </ThemeProvider>
   </BrowserRouter>
 )}
 
