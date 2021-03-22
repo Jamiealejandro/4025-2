@@ -2,7 +2,6 @@ import config from './../config/config'
 import app from './express'
 import mongoose from 'mongoose'
 
-const uri = "mongodb+srv://<jamiealejandro>:<Damansara1>@cluster0.rhco3.mongodb.net/CWDB?retryWrites=true&w=majority";
 // Connection URL
 mongoose.Promise = global.Promise
 mongoose.connect(config.mongoUri, { useNewUrlParser: true, useCreateIndex: true,
