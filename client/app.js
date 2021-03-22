@@ -1,5 +1,5 @@
 import React from 'react'
-import MainRouter from './MainRouter'
+import MainRouter from './mainrouter'
 import {BrowserRouter} from 'react-router-dom'
 import { ThemeProvider } from '@material-ui/styles'
 import theme from './theme'
