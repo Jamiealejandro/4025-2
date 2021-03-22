@@ -9,6 +9,7 @@ import Template from './../frontpage'
 import userRoutes from './routes/user.routes'
 import authRoutes from './routes/auth.routes'
 
+
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import MainRouter from './../client/MainRouter'
@@ -16,6 +17,7 @@ import { StaticRouter } from 'react-router-dom'
 
 import { ServerStyleSheets, ThemeProvider } from '@material-ui/styles'
 import theme from './../client/theme'
+
 
 //comment out b4 build
 import devBundle from './devBundle'
