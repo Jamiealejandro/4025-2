@@ -41,11 +41,11 @@ export default function Home(){
 
           </Typography>
           <CardMedia className={classes.media} image={myImg} title="My Image"/>
-          <Typography variant="body2" component="p" className={classes.credit} color="textSecondary"> Image by Picasso </Typography>
+          <Typography variant="body2" component="p" className={classes.credit} color="textSecondary"> S P Q R </Typography>
           <CardContent>
             <Typography variant="body1" component="p">
-              roma aeterna
-            <Link to="/users"> Users </Link>
+              ROMA AETERNA
+            
             </Typography>
           </CardContent>
         </Card>
