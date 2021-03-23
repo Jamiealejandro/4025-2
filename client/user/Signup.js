@@ -97,9 +97,9 @@ export default function Signup() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Link to="/login">
+          <Link to="/Signin">
             <Button color="primary" autoFocus="autoFocus" variant="contained">
-              Log in
+              Sign In
             </Button>
           </Link>
         </DialogActions>
