@@ -10,9 +10,9 @@ import {Link, withRouter} from 'react-router-dom'
 
 const isActive = (history, path) => {
   if (history.location.pathname == path)
-    return {color: '#ff4081'}
+    return {color: '#8B0000'}
   else
-    return {color: '#ffffff'}
+    return {color: '#8B0000'}
 }
 const Menu = withRouter(({history}) => (
   <AppBar position="static">
