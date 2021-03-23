@@ -1,4 +1,9 @@
 export default ({markup, css}) => {
+
+  const h1Style = {
+    backgroundImage: url("C:/Users/Jamie Chapman/Documents/Github/4025/client/assets/spqr2.jpg")
+  }
+
   return `<!doctype html>
   <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +14,11 @@ export default ({markup, css}) => {
 
   </head>
   <header>
-
   <h1> Roman History Lover's Forum</h1>
   <h2> This is the homepage </h2>
 
 </header>
     <body style="margin:0">
-
-
       <div id="root">${markup}</div>
       <style id="jss-server-side">${css}</style>
       <script type="text/javascript" src="/dist/bundle.js"></script>

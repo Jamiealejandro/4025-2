@@ -33,24 +33,9 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-var myAbTest = ABTest({
-    name: "SPQRABTEST",
-    customVarSlot: 1,
-    variations: {
-        first_variation: function () {
-            document.getElementById("SPQR2").src = "assets/images/spqr2.jpg";
-            document.getElementById("footer-text").innerHTML = "ROMA AETERNA";
-        },
-        another_variation: function () {
-            document.getElementById("SPQR3").src = "assets/images/spqr3.jpg";
-            document.getElementById("footer-text").innerHTML = "ROMA AETERNA";
-        },
-        control: function () { /* Empty function. */
-        }
-    }
-});
 
 export default function Home(){
+  
   const classes = useStyles()
     return (
         <Card className={classes.card}>
@@ -62,7 +47,7 @@ export default function Home(){
           <Typography variant="body2" component="p" className={classes.credit} color="textSecondary"> S P Q R </Typography>
           <CardContent>
             <Typography variant="body1" component="p">
-              <button onclick={ABTestUtils.setCookie('abjs_'+ myAbTest.name, '', 365);}>ROMA AETERNA</button>
+              ROMA AETERNA
 
             </Typography>
           </CardContent>
