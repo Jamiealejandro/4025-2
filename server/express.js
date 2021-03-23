@@ -22,6 +22,8 @@ import theme from './../client/theme'
 //comment out b4 build
 import devBundle from './devBundle'
 
+var proxy = require('express-http-proxy');
+
 const CURRENT_WORKING_DIR = process.cwd()
 const app = express()
 
@@ -68,11 +70,11 @@ app.get('/', (req, res) => {
 
 app.use((err, req, res, next) => {
  if (err.name === 'UnauthorizedError') {
- res.status(401).json({"error" : err.name + ": " + err.message})
+   res.status(401).json({"error" : err.name + ": " + err.message})
  }else if (err) {
- res.status(400).json({"error" : err.name + ": " + err.message})
- console.log(err)
- }
+   res.status(400).json({"error" : err.name + ": " + err.message})
+   console.log(err)
+  }
 })
 
 export default app
