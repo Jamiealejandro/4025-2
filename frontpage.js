@@ -1,6 +1,15 @@
 import background from "./client/assets/images/spqr2.jpg"
 
+const useStyles2 = makeStyles(theme => ({
+  h1: {
+    backgroundImage: "url(/spqr2.jpg)",
+    textAlign: center,
+    color: #2F4F4F
+  }
+}))
+
 export default ({markup, css}) => {
+  const classes = useStyles2()
 
   return `<!doctype html>
   <html lang="en">
@@ -12,7 +21,7 @@ export default ({markup, css}) => {
 
   </head>
   <header >
-  <h1 style={{ backgroundImage: "url(/spqr2.jpg)" }}> Roman History Lover's Forum</h1>
+  <h1> Roman History Lover's Forum</h1>
 
 
 </header>
