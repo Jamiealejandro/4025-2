@@ -8,7 +8,7 @@ router.route('/api/Users')
   .get(userCtrl.list)
   .post(userCtrl.create)
 
-router.route('/api/users/:userId')
+router.route('/api/Users/:userId')
 .get(authCtrl.requireSignin, authCtrl.hasAuthorization, userCtrl.read)
 .put(authCtrl.requireSignin, authCtrl.hasAuthorization, userCtrl.update)
 .delete(authCtrl.requireSignin, authCtrl.hasAuthorization, userCtrl.remove)
