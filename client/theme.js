@@ -10,15 +10,15 @@ const theme = createMuiTheme({
  light: '#801313',
  main: '#b71c1c',
  dark: '#c54949',
- contrastText: '#fff',
+ contrastText: '#263238',
  },
  secondary: {
  light: '#d15353',
  main: '#c62828',
  dark: '#8a1c1c',
- contrastText: '#000',
+ contrastText: '#263238',
  },
- openTitle: '#3f4771',
+ openTitle: '#3f51b5',
  protectedTitle: pink['400'],
  type: 'light'
  }
