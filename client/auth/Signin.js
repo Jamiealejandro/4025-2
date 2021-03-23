@@ -52,7 +52,7 @@ export default function Login(props) {
       password: values.password || undefined
     }
 
-    login(user).then((data) => {
+    signin(user).then((data) => {
       if (data.error) {
         setValues({ ...values, error: data.error})
       } else {
@@ -81,7 +81,7 @@ export default function Login(props) {
       <Card className={classes.card}>
         <CardContent>
           <Typography variant="h6" className={classes.title}>
-            Log in
+            Sign In
           </Typography>
           <TextField id="email" type="email" label="Email" className={classes.textField} value={values.email} onChange={handleChange('email')} margin="normal"/><br/>
           <TextField id="password" type="password" label="Password" className={classes.textField} value={values.password} onChange={handleChange('password')} margin="normal"/>
