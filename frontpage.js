@@ -1,7 +1,7 @@
 export default ({markup, css}) => {
 
-  const h1Style = {
-    backgroundImage: url("C:/Users/Jamie Chapman/Documents/Github/4025/client/assets/spqr2.jpg")
+  const myStyle = {
+    backgroundImage: "url("C:/Users/Jamie Chapman/Documents/Github/4025/client/assets/spqr2.jpg")"
   }
 
   return `<!doctype html>
@@ -13,7 +13,7 @@ export default ({markup, css}) => {
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   </head>
-  <header>
+  <header style= myStyle>
   <h1> Roman History Lover's Forum</h1>
   <h2> This is the homepage </h2>
 
