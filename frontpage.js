@@ -1,8 +1,6 @@
-export default ({markup, css}) => {
+import background from "./client/assets/images/spqr2.jpg"
 
-  const myStyle = {
-    backgroundImage: "url("C:/Users/Jamie Chapman/Documents/Github/4025/client/assets/spqr2.jpg")"
-  }
+export default ({markup, css}) => {
 
   return `<!doctype html>
   <html lang="en">
@@ -13,7 +11,7 @@ export default ({markup, css}) => {
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   </head>
-  <header style= myStyle>
+  <header style={{ backgroundImage: "url(/spqr2.jpg)" }}>
   <h1> Roman History Lover's Forum</h1>
   <h2> This is the homepage </h2>
 
