@@ -11,9 +11,9 @@ export default ({markup, css}) => {
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   </head>
-  <header style={{ backgroundImage: "url(/spqr2.jpg)" }}>
-  <h1> Roman History Lover's Forum</h1>
-  <h2> This is the homepage </h2>
+  <header >
+  <h1 style={{ backgroundImage: "url(/spqr2.jpg)" }}> Roman History Lover's Forum</h1>
+
 
 </header>
     <body style="margin:0">
