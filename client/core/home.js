@@ -25,17 +25,17 @@ const useStyles = makeStyles(theme => ({
   credit: {
     padding: 10,
     textAlign: 'right',
-    backgroundColor: '#ededed',
+    backgroundColor: '#E9967A',
     borderBottom: '1px solid #d0d0d0',
     '& a':{
-      color: '#3f4771'
+      color: '#8B0000'
     }
   }
 }))
 
 
 export default function Home(){
-  
+
   const classes = useStyles()
     return (
         <Card className={classes.card}>
