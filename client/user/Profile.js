@@ -55,7 +55,7 @@ export default function Profile({ match }) {
     }
 
   }, [match.params.userId])
-  
+
     if (redirectToSignin) {
       return <Redirect to='/signin'/>
     }
@@ -82,6 +82,12 @@ export default function Profile({ match }) {
                 <DeleteUser userId={user._id}/>
               </ListItemSecondaryAction>)
             }
+          </ListItem>
+          <ListItem>
+            <ListItemText primary={user.about}/>
+          </ListItem>
+          <ListItem>
+            <ListItemText primary={"The number of profile edits are: " + user.profileclicks}/>
           </ListItem>
           <Divider/>
           <ListItem>

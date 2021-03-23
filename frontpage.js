@@ -16,7 +16,7 @@ export default ({markup, css}) => {
 </header>
     <body style="margin:0">
 
-    <body>
+    <bo
       <div id="root">${markup}</div>
       <style id="jss-server-side">${css}</style>
       <script type="text/javascript" src="/dist/bundle.js"></script>

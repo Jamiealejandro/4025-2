@@ -56,6 +56,7 @@ const update = async (req, res) => {
     user.updated = Date.now()
     await user.save()
     user.hashed_password = undefined
+    user.profileclicks = user.profileclicks + 1
     user.salt = undefined
     res.json(user)
   } catch (err) {
