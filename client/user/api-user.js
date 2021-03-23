@@ -1,4 +1,4 @@
-const functionname = async (parameters) => {
+const create = async (user) => {
  try {
    let response = await fetch('/api/users/', {
      method: 'POST',

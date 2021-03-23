@@ -41,6 +41,7 @@ export default function EditProfile({ match }) {
   const classes = useStyles()
   const [values, setValues] = useState({
     name: '',
+    about:'',
     password: '',
     email: '',
     open: false,
@@ -71,6 +72,7 @@ export default function EditProfile({ match }) {
   const clickSubmit = () => {
     const user = {
       name: values.name || undefined,
+      about: values.about || undefined,
       email: values.email || undefined,
       password: values.password || undefined
     }
